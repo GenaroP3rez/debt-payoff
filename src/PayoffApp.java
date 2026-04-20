@@ -24,7 +24,11 @@ public class PayoffApp {
             aprs.add(apr);
 
             double balance = scan.nextDouble();
+
+            //AL
+            card.add(new CreditCard(name, apr, balance));
             CreditCard myCard = new CreditCard(name, apr, balance);
+
             card.add(myCard);
 
             // Consume \n after balance input 
