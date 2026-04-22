@@ -8,6 +8,14 @@ public class PayoffApp {
         Scanner scan = new Scanner(System.in);
 
         CreditCard amex = new CreditCard("American Express", 18.4, 402);
+        System.out.println(amex);
+
+        CreditCard discover = new CreditCard("Discover IT", 35.7, 6000);
+
+
+        //passed as an argument 
+        amex.compareTo(discover);
+
 
 
 
@@ -41,10 +49,22 @@ public class PayoffApp {
 
         Collections.sort(aprs, Collections.reverseOrder()); 
         // "you didnt tell me how to compare it" compare interface is next class 4/22/26
-       // Collections.sort(card); 
+        Collections.sort(card); 
+
+
+
+
+        //reverse order - 
+        Collections.sort(aprs, Collections.reverseOrder());
+         Collections.sort(card, Collections.reverseOrder());
 
         //added code
         System.out.println(aprs);
         System.out.println(card);
     }
+
+
+    
+
+    
 }
